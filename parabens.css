@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(imagens/tela-jogo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.image1, .image2, .image3, 
+.image4, .image5, .image6{
+position: absolute;
+transition: all ease 1s;
+}
+.image1{
+    top: 200px;
+    left: 500px;
+}
+.image2{
+    top: 100px;
+    left: 100px;
+}
+.image3{
+    top: 600px;
+    left: 1000px;
+}
+.image4{
+    top: 100px;
+    left: 1000px;
+}
+.image5{
+    top: 50px;
+    left: 600px;
+}
+.image6{
+    top: 600px;
+    left: 200px;
+}
+.parabens{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 190px;
+    margin-top: 300px;
+    transition: all ease 1s;
+    font-family: 'Modak', cursive;    
+    color: rgb(6, 143, 136);
+    text-shadow: 16px 16px 10px rgb(0, 0, 0);
+}
+button{
+    padding: 12px 100px;
+    border: none;
+    background-color: rgb(80, 104, 56);
+    color: lawngreen;
+    outline: none;
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    border-left:  10px;
+}
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+
+/* mobile */
+@media only screen and (max-width: 360px) {
+    body{
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+   .parabens{
+       font-size: 50px;
+       margin-top: 240px;
+   }
+   button{
+       margin: 30px 0px;
+       padding: 6px 50px;
+       margin-top: 240px;
+   }
+   .image1{
+    top: 20px;
+    left: 40px;
+    }
+    .image2{
+        top: 160px;
+        left: 50px;
+    }
+    .image3{
+        top: 280px;
+        left: 270px;
+    }
+    .image4{
+        top: 390px;
+        left: 210px;
+    }
+    .image5{
+        top: 490px;
+        left: 40px;
+    }
+    .image6{
+        top: 20px;
+        left: 212px;
+    }
+   
+}    

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <title>Jogo da forca</title>
+</head>
+<body>
+
+    <div class="jogo-forca">
+        Jogo da Forca
+        <img src="imagens/forca2.png" alt="img">
+    </div>
+    <div class="titulo-tempo">
+        <div class="titulo">
+            TEMPO
+        </div>
+
+        <div class="tempo">
+            <span>00</span>
+        </div>
+    </div>
+
+    <div class="conteiner">      
+
+        <div class="corpo-geral">
+
+            <div class="forca">
+                <img src="imagens/forca.png" alt="img">
+            </div>
+            <div class="cabeca">
+                <img src="imagens/cabeca.png" alt="img"> 
+            </div>
+            <div class="corpo">
+                <img src="imagens/corpo.png" alt="img"> 
+            </div>
+            <div class="braco-esquerdo">
+                <img src="imagens/be.png" alt="img">
+            </div>
+            <div class="braco-direito">
+                <img src="imagens/bd.png" alt="img">
+            </div>
+            <div class="perna-esquerda">
+                <img src="imagens/pe.png" alt="img">
+            </div>
+            <div class="perna-direita">
+                <img src="imagens/pd.png" alt="img">
+            </div>
+            <div class="corda-sem-laco">
+                <img src="imagens/corda-sem -laco .png" alt="img">
+            </div>
+            <div class="corda-com-laco">
+                <img src="imagens/corda-com-laco .png" alt="img">
+            </div>
+
+        </div>
+
+        <div class="palavras">
+            
+        </div>
+
+        <div class="teclado-geral">
+
+            <div class="dica">
+                <h2>DICA</h2>
+                <p></p>
+            </div>
+
+            <div class="teclado">
+                <button onclick="jogada(value)" class="btn" type="button" value="q">q</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="w">w</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="e">e</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="r">r</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="t">t</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="y">y</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="u">u</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="i">i</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="o">o</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="p">p</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="a">a</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="s">s</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="d">d</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="f">f</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="g">g</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="h">h</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="j">j</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="k">k</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="l">l</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="ç">ç</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="z">z</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="x">x</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="c">c</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="v">v</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="b">b</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="n">n</button>
+                <button onclick="jogada(value)" class="btn" type="button" value="m">m</button>
+                <button class="inicia">iniciar partida</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

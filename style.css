@@ -1,0 +1,323 @@
+body{
+    background-image: url(imagens/tela-jogo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo-tempo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    color: rgb(228, 139, 23);
+    font-size: 70px;
+    font-family: 'Modak', cursive;
+    font-weight: 500;
+    margin-top: -120px;
+}
+.tempo{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    border-radius: 50%;
+    background-color: rgb(57, 58, 148);
+    color: rgb(241, 150, 12);
+    font-size: 60px;
+    transition: all ease 1s;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 440px;
+}
+.corpo-geral{
+    margin-top: -40px;
+}
+.teclado-geral{   
+    position: absolute; 
+    top: 600px;
+    display: flex;
+}
+.teclado{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 10px;
+}
+.dica{    
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border: solid 2px #000;
+    margin-top: 50px;
+    background: rgb(23, 119, 126);
+    color: rgb(255, 255, 255);
+}
+.dica h2{
+    margin-bottom: 0px;
+    color: chartreuse;
+}
+.dica p{
+    font-size: 20px;
+}
+.palavras{
+    position: absolute;   
+    top: 530px;
+    margin-left: 500px;
+}
+.palavras span{
+    font-size: 70px;   
+    font-weight: 900;
+    border-bottom: solid 5px rgb(255, 0, 0);
+    margin: 0px 15px;
+    color: transparent;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px transparent;
+}
+.cabeca, .corpo, .braco-esquerdo, 
+.braco-direito, .perna-esquerda, 
+.perna-direita, .corda-sem-laco
+{
+    position: absolute;    
+    display: none; 
+}
+.forca{
+    margin-left: -200px;
+    position: absolute;
+}
+.corpo{
+    margin-top: 105px;
+    margin-left: 10px;
+}
+.cabeca{
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.braco-esquerdo{
+    margin-top: 105px;
+    margin-left: -90px;
+}
+.braco-direito{
+    margin-top: 105px;
+    margin-left: 108px;
+}
+.perna-esquerda{
+    margin-top: 250px;
+    margin-left: 10px;
+}
+.perna-direita{
+    margin-top: 250px;
+    margin-left: 83px;
+}
+.corda-sem-laco{
+    margin-left: 45px;
+}
+.corda-com-laco{    
+    position: absolute;
+}
+.teclado button{
+    width: 60px;
+    height: 60px;
+    margin: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(79, 68, 182);
+}
+.teclado .inicia{
+    width: 306px;
+    background-color: rgb(197, 150, 20);
+    outline: none;
+}
+.teclado button:hover{
+    background-color: rgb(180, 180, 180);
+    color: rgb(133, 8, 8);
+}
+
+.teclado .inicia:hover{
+    background-color: rgb(16, 155, 165);
+}
+.jogo-forca{
+    font-size: 60px;    
+    color: tomato;
+    text-shadow: 4px 4px 3px rgb(0, 0, 0);
+    font-family: 'Modak', cursive;
+}
+.jogo-forca img{
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 360px) {
+    body{ 
+        margin: 0px;
+        width: 360px;            
+       height: 100vh;        
+       overflow: hidden;
+    }
+    .jogo-forca{
+        width: 340px;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .jogo-forca img{
+        width: 20px;
+    }    
+    
+    .teclado-geral{   
+        width: 350px;
+        position: absolute; 
+        top: 370px;
+        left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .teclado{
+        width: inherit;
+        height: 100px;
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .dica{    
+        width: 340px;
+        padding: 0px;
+        margin-top: 0px;
+        background: rgba(0, 0, 0, 0.596);
+    }
+    .dica h2{
+        font-size: 15px;
+        margin: 0px;
+    }
+    .dica p{
+        font-size: 13px;
+    }
+    .palavras{
+        display: flex;
+        justify-content: center;
+        width: 360px;
+        position: absolute;   
+        top: 265px;
+        left: -500px;
+        flex-wrap: wrap;
+    }
+    .palavras span{
+        font-size: 30px;   
+        font-weight: 900;
+        margin: 0px 15px;
+    }
+    .teclado button{
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .teclado .inicia{
+        width: 250px;
+    }
+    .corpo-geral{
+        margin-right: 200px;
+    }
+
+    .forca{
+        top: 60px;  
+        right: 110px;
+    }
+    .forca img{
+        width: 100px;
+    }
+  
+    .corpo{
+        margin-top: 79px;
+        margin-left: -119px;
+    }
+    .corpo img{
+        width: 50px;
+    }
+    .cabeca{
+        margin-top: 60px;
+        margin-left: -110px;
+    }
+    .cabeca img{
+        width: 33px;
+    }
+    .braco-esquerdo{
+        margin-top: 80px;
+        margin-left: -150px;
+    }
+    .braco-esquerdo img{
+        width: 40px;
+    }
+    .braco-direito{
+        margin-top: 80px;
+        margin-left: -79px;
+    }
+    .braco-direito img{
+        width: 40px;
+    }
+    .perna-esquerda{
+        margin-top: 142px;
+        margin-left: -114px;
+    }
+    .perna-esquerda img{
+        width: 16px;
+    }
+    .perna-direita{
+        margin-top: 142px;
+        margin-left: -87px;
+    }
+    .perna-direita img{
+        width: 16px;
+    }
+    .corda-sem-laco{
+        top: 64px;
+        left: 197px;
+    }
+    .corda-sem-laco img{
+        width: 12px;
+    }
+    .corda-com-laco{           
+        top: 64px;
+        left: 225px;
+        display: none;
+    }
+    .corda-com-laco img{    
+        width: 40px;
+    }
+    .tempo {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    .titulo-tempo{
+        margin-top: -50px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .teclado button:active{
+        background-color: rgb(48, 216, 14);
+        color: rgb(255, 255, 255);
+    }
+
+}
